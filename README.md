@@ -1,2 +1,4 @@
-# proyectoFinal
-info sobre el proyecto
+#Nombre proyecto
+para que sirve
+acciones
+
