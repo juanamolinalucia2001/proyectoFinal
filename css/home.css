@@ -7,8 +7,13 @@
     outline: none;
     font-family: sans-serif;
 }
+
+body{
+	background: rgb(252, 197, 77);
+}
+
 header{
-    background-color: rgb(106, 104, 104);
+    background-color: rgb(55, 55, 55);
     color: #fff;
     display: flex;
     justify-content: space-between;
@@ -16,7 +21,7 @@ header{
     padding: .5rem 2rem;
 }
 .logo-header img{
-    width: 50px;
+    width: 70px;
 }
 .nav-menu ul{
     display: flex;

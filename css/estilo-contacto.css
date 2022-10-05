@@ -1,3 +1,6 @@
+body{
+	background: rgb(252, 197, 77);
+}
 .content-principal{
     display: flex;
     align-items: center;

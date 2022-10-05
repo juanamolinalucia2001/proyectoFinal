@@ -10,7 +10,7 @@
 </head>
 <header class="header">
     <div class="logo-header">
-        <a href=""><img src="../img/logo.svg" alt=""></a>
+        <a href="home.html"><img src="../img/logo.png" alt=""></a>
     </div>
     <div class="nav-menu">
         <input type="checkbox" id="check">    
@@ -18,27 +18,30 @@
             <i class="menu-icon"><img src="../img/menú-30.svg" alt=""></i>
         </label>
         <ul>
-            <li class="nav-menu--li"><a class="nav-menu--li-a" href="">Home</a></li>
+            <li class="nav-menu--li"><a class="nav-menu--li-a" href="home.html">Home</a></li>
             <li class="nav-menu--li"><a class="nav-menu--li-a" href="">Info</a></li>
             <li class="nav-menu--li"><a class="nav-menu--li-a"  href="">Servicios</a></li>
             <li class="nav-menu--li"><a class="nav-menu--li-a"  href="contacto.html">Contacto</a></li>
+            <li class="nav-menu--li">
+                <input type="checkbox" id="btn-modal">
+                <label for="btn-modal" class="lbl-modal">unirme a proyecto</label>
+                <!-- empieza modal -->
+                <div class="modal">
+                    <div class="contenedor">
+                        <label for="btn-modal">X</label>
+                        <div class="container-login">
+                            <p class="p-login">Login</p>
+                            <input type="text" placeholder="ingresa tu usuario" name="uname" required class="submit">
+                            <input type="password" placeholder="ingresa tu contraseñas" name="psw" required class="submit">                    <button type="submit" class="boton">Ingresar</button>
+                            <p class="p-regis">No sos miembro?,<a href="registro.html" id="a">registate pa</a></p>
+                        </div>
+                    </div>
+                </div>
+            </li>
         </ul>
     </div>
 </header>
 <body>
-    <input type="checkbox" id="btn-modal">
-    <button><label for="btn-modal" class="lbl-modal">unirme a proyecto</label></button>
-    <!-- empieza modal -->
-    <div class="modal">
-        <div class="contenedor">
-            <label for="btn-modal">X</label>
-            <div class="container-login">
-                <p class="p">Login</p>
-                <input type="text" placeholder="ingresa tu usuario" name="uname" required class="submit">
-                <input type="password" placeholder="ingresa tu contraseñas" name="psw" required class="submit">                    <button type="submit" class="boton">Ingresar</button>
-                <p>No sos miembro?,<a href="registro.html">registate pa</a></p>
-            </div>
-        </div>
-    </div>
+
 </body>
 </html>
