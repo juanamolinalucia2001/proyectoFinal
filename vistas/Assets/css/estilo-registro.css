@@ -16,8 +16,7 @@ body{
 	box-shadow: 1px 7px 25px rgba(0,0,0,0.6);
 	border-radius: 2vh;
 	position:relative;
-	top: 10vh;
-
+	top: 5vh;
 }
 
 .container-registro{
@@ -25,6 +24,21 @@ body{
 	height: 100%;
 	padding:5%; 
 	text-align: center;
+}
+
+.p-registro{
+	font-size: 200%;
+	font-weight:bold;
+	color: rgb(44, 43, 43);
+}
+
+.p-login{
+	padding: 5%;
+	position: relative;
+	font-size: 200%;
+	font-weight:bold;
+	color: rgb(44, 43, 43);
+	margin: 0px auto;
 }
 
 .p{
