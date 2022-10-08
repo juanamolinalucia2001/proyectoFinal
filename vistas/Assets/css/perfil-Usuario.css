@@ -1,0 +1,55 @@
+.body{
+    display: flex;
+}
+
+nav{
+    width: 20%;
+    height: 100vh;
+    background: #eeee;
+    border: 1px solid #dedede;
+    box-shadow: 10px 0 10px rgba(0, 0,0, 25%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+nav .enlaces{
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    padding: 40px 0; 
+}
+
+nav .enlaces a{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    color: #584871;
+    transition: all 0.5s;
+}
+
+nav .enlaces a:hover{
+    background: #ccc;
+
+}
+
+.informacion{
+    width: 80%;
+   background: rgb(252, 197, 77);
+    justify-content: center;
+    align-items: center;
+}
+
+.informacion img{
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+.informacion section{
+    display: block;
+}

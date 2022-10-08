@@ -1,9 +1,4 @@
-
-body{
-	background: rgb(61, 58, 111);
-}
-
-.contenedor{	
+.contenedor-registro{	
 	width:60vh;
 	height: auto;
 	margin: auto;
@@ -27,24 +22,7 @@ body{
 	color: rgb(44, 43, 43);
 }
 
-.p-login{
-	padding: 5%;
-	position: relative;
-	font-size: 200%;
-	font-weight:bold;
-	color: rgb(44, 43, 43);
-	margin: 0px auto;
-}
-
-.p{
-	padding: 5%;
-	position: relative;
-	font-size: 200%;
-	font-weight:bold;
-	color: rgb(44, 43, 43);
-	margin: 0px auto;
-}
-.submit{
+.submit-registro{
 	width: 80%;
 	height: 8%;
 	margin: 5%;
@@ -52,9 +30,9 @@ body{
 	border-bottom: 2px solid silver;
 	font-size: large;
 }
-.boton{
+.boton-registro{
 	width: 60%;
-	height: 5vh;
+	height: 4vh;
 	margin: 30px;
 	background-color: rgb(52, 77, 236);
 	cursor: pointer;

@@ -12,7 +12,7 @@ body{
 	background: rgb(252, 197, 77);
 }
 
-header{
+.header{
     background-color: rgb(55, 55, 55);
     color: #fff;
     display: flex;

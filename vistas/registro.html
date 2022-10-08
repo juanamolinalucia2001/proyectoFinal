@@ -6,37 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>registro</title>
     <link rel="stylesheet" href="Assets/css/estilo-registro.css">
-    <link rel="stylesheet" href="Assets/css/home.css">
+    <link rel="stylesheet" href="Assets/css/estilo-home.css">
+    <link rel="stylesheet" href="Assets/css/estilo-modal.css">
 </head>
-<header class="header">
-    <div class="logo-header">
-        <a href="home.html"><img src="Assets/img/logo.png" alt=""></a>
-    </div>
-    <div class="nav-menu">
-        <input type="checkbox" id="check">    
-        <label for="check" class="checkbtn">
-            <i class="menu-icon"><img src="Assets/img/menú-30.svg" alt=""></i>
-        </label>
-        <ul>
-            <li class="nav-menu--li"><a class="nav-menu--li-a" href="home.html">Home</a></li>
-            <li class="nav-menu--li"><a class="nav-menu--li-a" href="info.html">Info</a></li>
-            <li class="nav-menu--li"><a class="nav-menu--li-a"  href="contacto.html">Contacto</a></li>
-        </ul>
-    </div>
-</header>
+<script src="Assets/js/menu.js"></script>
 <body>
-    <div class="contenedor">
+    <menu-component></menu-component>
+    <div class="contenedor-registro">
         <div class="container-registro">
             <p class="p-registro">Registro</p>
-            <input type="text" placeholder="Ingresa tu nombre completo" name="nombre" required class="submit">
-            <input type="date" placeholder="Ingresa tu fecha de nacimiento" name="nacimiento" required class="submit">
-            <input type="text" placeholder="Ingresa tu usuario" name="usuario" required class="submit">
-            <input type="password" placeholder="Ingresa tu contraseñas" name="clave" required class="submit">
-            <input type="email" placeholder="Ingresa tu correo" name="correo" required class="submit">
-            <input type="text" placeholder="Ingresa tu profesion" name="profesion" required class="submit">
+            <input type="text" placeholder="Ingresa tu nombre completo" name="nombre" required class="submit-registro">
+            <input type="date" placeholder="Ingresa tu fecha de nacimiento" name="nacimiento" required class="submit-registro">
+            <input type="text" placeholder="Ingresa tu usuario" name="usuario" required class="submit-registro">
+            <input type="password" placeholder="Ingresa tu contraseñas" name="clave" required class="submit-registro">
+            <input type="email" placeholder="Ingresa tu correo" name="correo" required class="submit-registro">
+            <input type="text" placeholder="Ingresa tu profesion" name="profesion" required class="submit-registro">
             <p>Estudias? <input type="checkbox"></p>
-            <input type="text" placeholder="Contanos" name="estudia" required class="submit">
-            <button type="submit" class="boton">Ingresar</button>
+            <input type="text" placeholder="Contanos" name="estudia" required class="submit-registro">
+            <button type="submit" class="boton-registro">Ingresar</button>
         </div>
     </div>
 </body>

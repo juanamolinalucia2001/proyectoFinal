@@ -5,25 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil usuario</title>
+    <link rel="stylesheet" href="Assets/css/perfil-Usuario.css">
+    <link rel="stylesheet" href="Assets/css/estilo-home.css">
+    <link rel="stylesheet" href="Assets/css/estilo-modal.css">
 </head>
 <body>
     <menu-component></menu-component>
 </body>
-<div>
-    <h1>Bienvenido Usuario</h1>
-    <img src="Assets/img/img1.jpg" alt="imagen-usuario">
+<div class="body">
+    <nav class="menu">
+        <div class="enlaces">
+            <a href="#informacion_personal"><i class="fa fa-user-pen"></i> Informacion Personal</a>
+            <a href="#mis_proyectos"><i class="fa fa-lightbulb-on"></i>Mis Proyectos</a>
+            <a href="#proyecto_unidos"><i class="fa fa-memo-circle-check"></i>Proyectos unidos</a>
+        </div>
+    </nav>
+    <div class="informacion">
+        <h1>Bienvenido Usuario</h1>
+        <img src="Assets/img/img1.jpg" alt="imagen-usuario">
+        <section class="informacion_personal">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum dolores earum voluptatibus! Dicta quod dignissimos incidunt reprehenderit, expedita nostrum consectetur nobis praesentium dolor magnam facere facilis possimus quidem tempore. Perspiciatis.</section>
+        <section class="mis_proyectos">mis proyectos</section>
+        <section class="proyecto_unidos"> aaaaa</section>
+    </div>
 </div>
-<nav class="menu">
-    <ul>
-        <li><a href="#informacion_personal"> Informacion Personal</a></li>
-        <li><a href="#mis_proyectos">Mis Proyectos</a> </li>
-        <li> <a href="#proyecto_unidos">Proyectos unidos</a> </li>
-    </ul>
-</nav>
 
-
-<script src="menu.js"></script>
-<section class="informacion_personal">mi info</section>
-<section class="mis_proyectos">mis proyectos</section>
-<section class="proyecto_unidos">aaaaa</section>
+<script src="Assets/js/menu.js"></script>
 </html>
