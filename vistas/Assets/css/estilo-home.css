@@ -40,7 +40,7 @@ body{
     border-radius: 2px;
 }
 .menu-icon, #check{
-    display: none;
+    display:none;
 }
 .nav-menu--li-a{
     padding: 1rem;
@@ -51,12 +51,18 @@ body{
 } 
 
 @media (max-width:768px){
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+     
+    }
     .checkbtn{
         display: block;
     }
     .menu-icon{
         display: block;
-        position: fixed;
+        /* position: fixed; */
         top: 20px;
         right: 20px;
         cursor: pointer;
@@ -84,6 +90,7 @@ body{
     #check:checked ~ ul{
         left: 0;
         transition: all .25s;
+        z-index: 1;
     }
 }
 
