@@ -86,3 +86,122 @@ body{
         transition: all .25s;
     }
 }
+
+/* div que centra el contenido del buscador */
+.div-centrar-ahre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4vh;
+}
+
+.div-Search{
+    display: flex;
+    width: 70vh;
+}
+
+.boton-lupa{
+    width: 4.5vh;
+    height: 4vh;
+    margin: auto;
+    border-radius: 1vh;
+    border: none;
+    background-color: rgb(52, 77, 236);
+    cursor: pointer;
+    margin-right: 5%;
+}
+
+.icon{
+    font-size: 150%;
+    position: relative;
+    width: auto;
+    height: auto;
+    margin: auto;
+    color: #fafafa;
+}
+
+.Search{
+    width: 100%;
+    height: 4vh;
+    margin: auto;
+    padding: 2vh;
+    position: relative;
+    border: none;
+    border-radius: 1vh;
+    font-size:medium;
+}
+
+/* div que centra el contenido de los proyectos */
+.contenido-proyecto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+}
+
+.header-proyecto{
+    background-color: rgba(0, 0, 0, 0.261);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70vh;
+    height: 8vh;
+    border-radius: 1vh;
+}
+
+.nombre-proyecto{
+    padding:1%;
+    width: 50%;
+    height: auto;
+    margin: auto;
+    align-items: center;
+    justify-content:center ;
+    background-color: #fff;
+    border-radius: 1vh;
+}
+.p-nombre{
+    font-size: medium;
+    font-weight: bold;
+    margin-right: 5%;
+}
+
+.boton-unirse{
+    width: 8vh;
+    height: 4vh;
+    border-radius: 1vh;
+    border: none;
+    color: #fff;
+    background-color: #ff7b00;
+    font-size: medium;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 5%;
+}
+
+.contador{
+    width: 8vh;
+    height: 4vh;
+    border-radius: 1vh;
+    border: none;
+    color: #fff;
+    background-color: #5b5b5b;
+    font-size: medium;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja-contenido{
+    background-color: rgba(0, 0, 0, 0.261);
+    width: 70vh;
+    height: auto;
+    margin: 1vh;
+    border-radius: 1vh;
+    font-size:larger;
+    text-align: center;
+    padding: 1%;
+}

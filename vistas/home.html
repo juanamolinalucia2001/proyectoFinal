@@ -7,15 +7,46 @@
     <title>Home</title>
     <link rel="stylesheet" href="Assets/css/estilo-modal.css">
     <link rel="stylesheet" href="Assets/css/estilo-home.css">
-    <link rel="stylesheet" href="Assets/css/estilo-paginacion.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="Assets/css/estilo-paginacion.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> -->
 </head>
 
 <body>
     <menu-component></menu-component>
     
+    <!-- buscardor -->
+    <div class="div-centrar-ahre">
+        <div class="div-Search">
+            <button class="boton-lupa"><span class="icon"><i class="fa fa-search"></i></span></button>
+            <input type="text" class="Search" placeholder="Busque su proyecto...">
+        </div>
+    </div>
+
+    <!-- proyectos -->
+    <div class="contenido-proyecto">        
+        <div class="header-proyecto">
+            <div class="nombre-proyecto">
+                <p class="p-nombre">*nombre del proyecto*</p>
+            </div>
+            <button class="boton-unirse">Unirme</button>
+            <div class="contador">0/10</div>
+        </div>
+    </div>
+    <div class="contenido-proyecto"> 
+        <div class="caja-contenido">
+            <p>nombre del creador: by gabo</p>  
+            <p>informacion sobre lo que trata el proyecto:</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit iaculis ante</p>  
+            <p>varius torquent dapibus interdum vestibulum ut lacus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit iaculis ante</p>  
+            <p>varius torquent dapibus interdum vestibulum ut lacus.</p>
+            <p>recursos/materiales/conocimientos</p>  
+            <p>objetivos/metas/plazos</p>
+        </div>
+    </div>
     <!--paginado-->
-    <div class="wrapper">
+    <!-- <div class="wrapper">
         <nav aria-label="Page navigation example">
             <ul class="pagination">
                 <li class="page-item"><a class="page-link" href="#">Previous</a></li>
@@ -28,8 +59,8 @@
                 <li class="page-item"><a class="page-link" href="#">Next</a></li>
             </ul>
         </nav>
-    </div>
+    </div> -->
 </body>
 <script src="Assets/js/menu.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script> -->
 </html>
