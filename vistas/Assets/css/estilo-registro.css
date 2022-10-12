@@ -30,6 +30,13 @@
 	border-bottom: 2px solid silver;
 	font-size: large;
 }
+
+#texto{
+    display: block;
+    font-size: large;
+
+}
+
 .boton-registro{
 	width: 60%;
 	height: 4vh;
