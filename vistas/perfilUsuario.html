@@ -18,18 +18,63 @@
             </figure>
             <h1 id="titulo">Bienvenido Usuario</h1>
             <div class="menu-user">
-                <div class="caja-menu-user">
+                <button class="caja-menu-user" onclick="mostrar1()">
                     <a class="a-user" href="#CrearProyectos"><p class="p-menu-user">Crear Proyecto <i class="fa fa-plus"></i></p></a>
-                </div>
-                <div class="caja-menu-user">
+                </button>
+                <button class="caja-menu-user" onclick="mostrar2()">
                     <a class="a-user" href="#MisProyectos"><p class="p-menu-user">Mis Proyectos <i class="fa fa-lightbulb"></i></p></a>
-                </div>
-                <div class="caja-menu-user">
+                </button>
+                <button class="caja-menu-user" onclick="mostrar3()" >
                     <a class="a-user" href="#ProyectosUnidos"><p class="p-menu-user">Proyectos Unidos <i class="fa fa-users"></i></p></a>
-                </div>
+                </button>
             </div>
+
+            <div id="contenedor_crear_proyecto">
+                <p>hola1</p>
+                </div>
+                <div id="contenedor_mis_proyecto">
+                <p>hola2</p>
+                </div>
+                <div id="contenedor_otros_proyecto">
+                <p>hola3</p>
+                </div>
         </div>
     </div>
+
 </body>
+<style>
+    #contenedor_crear_proyecto{
+        display: none;
+    }
+    #contenedor_mis_proyecto{
+        display: none;
+    }
+    #contenedor_otros_proyecto{
+        display: none;
+    }
+</style>
+<script>
+    function mostrar1(){
+        document.getElementById('contenedor_crear_proyecto').style.display='block'
+        document.getElementById('contenedor_mis_proyecto').style.display='none'
+        document.getElementById('contenedor_otros_proyecto').style.display='none'
+
+    }
+
+    function mostrar2(){
+        document.getElementById('contenedor_crear_proyecto').style.display='none'
+        document.getElementById('contenedor_mis_proyecto').style.display='block'
+        document.getElementById('contenedor_otros_proyecto').style.display='none'
+
+    }
+
+    function mostrar3(){
+        document.getElementById('contenedor_crear_proyecto').style.display='none'
+        document.getElementById('contenedor_mis_proyecto').style.display='none'
+        document.getElementById('contenedor_otros_proyecto').style.display='block'
+
+    }
+</script>
 <script src="Assets/js/menu.js"></script>
+
 </html>
