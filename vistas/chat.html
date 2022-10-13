@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<main>
+    <header class="title">
+        <img src="Assets/img/logo1.png" width="50px" alt="logo">
+        <h1>aaaa</h1>
+        <button id="button">
+            <img src="Assets/img/menú-30.svg" alt="img-btn-responsive">
+        </button>
+        
+    </header>
+
+    <div class="container">
+        <div class="user-window">
+            <div class="users-head">
+                <h3>Personas</h3>
+                <h4>3</h4>
+            </div>
+            <div class="users-list">
+                <p>Juan</p>
+                <p>Alex</p>
+                <p>Gabo</p>
+            </div>
+        </div>
+        <div class="chat-window">
+            <div class="chats">
+                <div class="user-join">
+                    <p><b>Gabo</b> Se unio al chat</p>
+                </div>
+                <div class="mensaje entra">
+                    <h5>Juan</h5>
+                    <p>Quere ver anime?</p>
+                </div>
+                <div class="mensaje sale">
+                    <h5>Gabo</h5>
+                    <p>si UwU</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</main>
+
+</body>
+
+
+<style>
+  
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+main{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    width: 80%;
+    overflow: hidden;
+    border-radius: 10px;
+    transform: translate(-50%,-50%);
+}
+header{
+    background-color: rgb(22, 136, 251);
+    color: white;
+    padding: 7px 20px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.title{
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-star;
+    align-items: center;
+}
+h1{
+    font-size: 32px;
+    margin-left: 10px;
+}
+button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.container{
+    background-color: lightblue;
+    padding: 20px;
+    display: flex;
+    flex-direction:row;
+    justify-content: flex-start;
+    align-items: stretch;
+
+}
+.user-window{
+    width: 350px;
+    color: white;
+    background-color:rgb(78, 78, 78);
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+.users-head{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+h4{
+    background-color: lightblue;
+    padding: 0 8px;
+    border: 50px;
+}
+.users-list p{
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.chat-window{
+    width: 100%;
+    border-radius: 10px;
+    background-color:rgb(78, 78, 78);
+}
+.chats{
+    min-height: 65vh;
+    padding: 20px;
+}
+
+.user-join{
+   font-size: 0.9rem;
+   color:darkgrey;
+   background-color: white;
+   border-radius: 50px;
+   width: max-content;
+   padding: 7px 20px;
+   margin: 0 auto;
+   margin-bottom: 15px;
+}
+
+.mensaje{
+    color: darkgrey;
+    background-color: white;
+    padding: 5px 15px;
+    max-width: 400px;
+    margin-bottom: 15px;
+    border-radius: 10px 50px 50px 10px;
+}
+.mensaje p{
+    font-size: 15px;
+}
+
+.sale{
+    margin-left: auto;
+    color: darkgrey;
+    background-color: lightblue;
+    border-radius: 10px 50px 50px 10px;
+
+}
+</style>
+</html>
