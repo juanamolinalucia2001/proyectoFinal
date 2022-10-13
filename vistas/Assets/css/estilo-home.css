@@ -21,7 +21,7 @@ body{
     padding: .5rem 2rem;
 }
 .logo-header img{
-    width: 70px;
+    width: 90px;
 }
 .nav-menu ul{
     display: flex;
@@ -29,6 +29,8 @@ body{
 }
 .nav-menu li{
     margin-right: 1rem;
+    font-size: 2vh;
+    font-weight:200;
 }
 .nav-menu a{
     color: #fff;
@@ -46,7 +48,7 @@ body{
     padding: 1rem;
 } 
 .nav-menu--li-a:hover{
-    color:orangered;
+    color: #a218d0;
     transition: 0s;
 } 
 
@@ -138,21 +140,32 @@ body{
 }
 
 /* div que centra el contenido de los proyectos */
-.contenido-proyecto{
-    display: flex;
+.contenedor-container{
+    width: 70vh;
+    height: 100%;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
+}
+
+.contenido-proyecto{
+    border: 2px solid black;
+    border-radius: 2vh;
+    margin: 1vh;
+    padding: 1vh;
     height: auto;
     width: auto;
 }
 
 .header-proyecto{
-    background-color: rgba(0, 0, 0, 0.261);
+    background-color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 70vh;
+    width: auto;
     height: 8vh;
+    margin: 1vh;
+    margin-top: 1vh;
     border-radius: 1vh;
 }
 
@@ -163,11 +176,11 @@ body{
     margin: auto;
     align-items: center;
     justify-content:center ;
-    background-color: #fff;
+    background-color: rgba(254, 254, 254, 0);
     border-radius: 1vh;
 }
-.p-nombre{
-    font-size: medium;
+.h1-nombre{
+    font-size: 150%;
     font-weight: bold;
     margin-right: 5%;
 }
@@ -201,12 +214,12 @@ body{
 }
 
 .caja-contenido{
-    background-color: rgba(0, 0, 0, 0.261);
-    width: 70vh;
+    background-color: rgb(255, 255, 255);
+    width: auto;
     height: auto;
     margin: 1vh;
     border-radius: 1vh;
     font-size:larger;
     text-align: center;
-    padding: 1%;
+
 }
