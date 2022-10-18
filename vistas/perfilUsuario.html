@@ -35,7 +35,7 @@
                         <form id="form" action="#">
                             <input type="text" placeholder="Ingrese el nombre del Proyecto" name="nombre" required class="submit-registro">
                             <label  id="texto">Selecione una tematica</label>
-                            <input type="text" multiple name="tematica" list="drawfemails" class="submit-registro"/>
+                            <input type="text" placeholder="Puede elegir una de las tematicas por defecto" multiple name="tematica" list="drawfemails" class="submit-registro"/>
                             <datalist id="drawfemails">
                                 <option>Tecnologia</option>
                                 <option>Industrial</option>
@@ -45,61 +45,152 @@
                                 <option>Arte</option>
                             </datalist>
                             <label  id="texto">Selecione una cantidad maxima de Usuarios</label><br>
-                            <input type="number" id="tentacles" name="tentacles" min="1" max="10">
+                            <input type="number" id="number" name="number" min="2" max="10">
                             <input type="text" placeholder="Ingresa una breve descripcion del Proyecto" name="descripcion" required class="submit-registro">
                             <input type="text" placeholder="metas a lograr u objetivos" name="metas" required class="submit-registro">
-                            <label id="texto">Conocimientos/Requisitos de participantes <input type="checkbox"></label>
-                            <input type="text" placeholder="Espesifique" name="conocimientos" required class="submit-registro">
-                            <label  id="texto">Requiere algun plazo? <input type="checkbox"></label>
-                            <input type="date" placeholder="Ingresa el plazo de finalizacion" name="nacimiento" required class="submit-registro">
+                            
+                            <label id="texto">Conocimientos/Requisitos de participantes <input onclick="checkbox1()" type="checkbox"></label>
+                            <div id="checkbox1">
+                                <input type="text" placeholder="Espesifique" name="conocimientos" required class="submit-registro">
+                            </div>
+                            <label  id="texto">Requiere algun plazo? <input onclick="checkbox2()" type="checkbox"></label>
+                            <div id="checkbox2">
+                                <input type="date" placeholder="Ingresa el plazo de finalizacion" name="nacimiento" required class="submit-registro">
+                            </div>
+
                             <button type="submit" class="boton-registro">Crear Proyecto</button>
                         </form>
                     </div>
                 </div>
             </div>
             <div id="contenedor_mis_proyecto">
-                <p>hola2</p>
+                <div class="contenedor-container" >
+                    <div class="contenido-proyecto">        
+                        <div class="header-proyecto">
+                            <h1 class="h1-nombre">*nombre del proyecto*</h1>
+                            <button class="boton-chat"><a class="a-user" href="chat.html"><i class="fa fa-comment-dots"></i></a></button>
+                            <button class="boton-modificar"><i class="fa fa-pen"></i></button>
+                            <button class="boton-eliminar"><i class="fa fa-trash"></i></button>
+                            <div class="contador">0/10</div>
+                        </div>
+                        <div class="caja-contenido">
+                            <p>nombre del creador: by gabo</p>  
+                            <p>informacion sobre lo que trata el proyecto:</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit iaculis ante</p>  
+                            <p>varius torquent dapibus interdum vestibulum ut lacus.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit iaculis ante</p>  
+                            <p>varius torquent dapibus interdum vestibulum ut lacus.</p>
+                            <p>recursos/materiales/conocimientos</p>  
+                            <p>objetivos/metas/plazos</p>
+                        </div>
+                    </div>
+                    <div class="contenido-proyecto">        
+                        <div class="header-proyecto">
+                            <h1 class="h1-nombre">*nombre del proyecto*</h1>
+                            <button class="boton-chat"><a class="a-user" href="chat.html"><i class="fa fa-comment-dots"></i></a></button>
+                            <button class="boton-modificar"><i class="fa fa-pen"></i></button>
+                            <button class="boton-eliminar"><i class="fa fa-trash"></i></button>
+                            <div class="contador">0/10</div>
+                        </div>
+                        <div class="caja-contenido">
+                            <p>nombre del creador: by gabo</p>  
+                            <p>informacion sobre lo que trata el proyecto:</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit iaculis ante</p>  
+                            <p>varius torquent dapibus interdum vestibulum ut lacus.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit iaculis ante</p>  
+                            <p>varius torquent dapibus interdum vestibulum ut lacus.</p>
+                            <p>recursos/materiales/conocimientos</p>  
+                            <p>objetivos/metas/plazos</p>
+                        </div>
+                    </div>
+                    <div class="contenido-proyecto">        
+                        <div class="header-proyecto">
+                            <h1 class="h1-nombre">*nombre del proyecto*</h1>
+                            <button class="boton-chat"><a class="a-user" href="chat.html"><i class="fa fa-comment-dots"></i></a></button>
+                            <button class="boton-modificar"><i class="fa fa-pen"></i></button>
+                            <button class="boton-eliminar"><i class="fa fa-trash"></i></button>
+                            <div class="contador">0/10</div>
+                        </div>
+                        <div class="caja-contenido">
+                            <p>nombre del creador: by gabo</p>  
+                            <p>informacion sobre lo que trata el proyecto:</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit iaculis ante</p>  
+                            <p>varius torquent dapibus interdum vestibulum ut lacus.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit iaculis ante</p>  
+                            <p>varius torquent dapibus interdum vestibulum ut lacus.</p>
+                            <p>recursos/materiales/conocimientos</p>  
+                            <p>objetivos/metas/plazos</p>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div id="contenedor_otros_proyecto">
-                <p>hola3</p>
+                <div class="contenedor-container" >
+                    <div class="contenido-proyecto">        
+                        <div class="header-proyecto">
+                            <h1 class="h1-nombre">*nombre del proyecto*</h1>
+                            <button class="boton-chat"><a class="a-user" href="chat.html"><i class="fa fa-comment-dots"></i></a></button>
+                            <button class="boton-user-admin"><i class="fa fa-user-tie"></i></i></button>
+                            <button class="boton-salir-proyecto"><i class="fa fa-user-slash"></i></button>
+                            <div class="contador">0/10</div>
+                        </div>
+                        <div class="caja-contenido">
+                            <p>nombre del creador: by gabo</p>  
+                            <p>informacion sobre lo que trata el proyecto:</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit iaculis ante</p>  
+                            <p>varius torquent dapibus interdum vestibulum ut lacus.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit iaculis ante</p>  
+                            <p>varius torquent dapibus interdum vestibulum ut lacus.</p>
+                            <p>recursos/materiales/conocimientos</p>  
+                            <p>objetivos/metas/plazos</p>
+                        </div>
+                    </div>
+                    <div class="contenido-proyecto">        
+                        <div class="header-proyecto">
+                            <h1 class="h1-nombre">*nombre del proyecto*</h1>
+                            <button class="boton-chat"><a class="a-user" href="chat.html"><i class="fa fa-comment-dots"></i></a></button>
+                            <button class="boton-user-admin"><i class="fa fa-user-tie"></i></i></button>
+                            <button class="boton-salir-proyecto"><i class="fa fa-user-slash"></i></button>
+                            <div class="contador">0/10</div>
+                        </div>
+                        <div class="caja-contenido">
+                            <p>nombre del creador: by gabo</p>  
+                            <p>informacion sobre lo que trata el proyecto:</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit iaculis ante</p>  
+                            <p>varius torquent dapibus interdum vestibulum ut lacus.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit iaculis ante</p>  
+                            <p>varius torquent dapibus interdum vestibulum ut lacus.</p>
+                            <p>recursos/materiales/conocimientos</p>  
+                            <p>objetivos/metas/plazos</p>
+                        </div>
+                    </div>
+                    <div class="contenido-proyecto">        
+                        <div class="header-proyecto">
+                            <h1 class="h1-nombre">*nombre del proyecto*</h1>
+                            <button class="boton-chat"><a class="a-user" href="chat.html"><i class="fa fa-comment-dots"></i></a></button>
+                            <button class="boton-user-admin"><i class="fa fa-user-tie"></i></i></button>
+                            <button class="boton-salir-proyecto"><i class="fa fa-user-slash"></i></button>
+                            <div class="contador">0/10</div>
+                        </div>
+                        <div class="caja-contenido">
+                            <p>nombre del creador: by gabo</p>  
+                            <p>informacion sobre lo que trata el proyecto:</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit iaculis ante</p>  
+                            <p>varius torquent dapibus interdum vestibulum ut lacus.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit iaculis ante</p>  
+                            <p>varius torquent dapibus interdum vestibulum ut lacus.</p>
+                            <p>recursos/materiales/conocimientos</p>  
+                            <p>objetivos/metas/plazos</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
 </body>
-<style>
-    #contenedor_crear_proyecto{
-        display: none;
-    }
-    #contenedor_mis_proyecto{
-        display: none;
-    }
-    #contenedor_otros_proyecto{
-        display: none;
-    }
-</style>
-<script>
-    function mostrar1(){
-        document.getElementById('contenedor_crear_proyecto').style.display='block'
-        document.getElementById('contenedor_mis_proyecto').style.display='none'
-        document.getElementById('contenedor_otros_proyecto').style.display='none'
 
-    }
-
-    function mostrar2(){
-        document.getElementById('contenedor_crear_proyecto').style.display='none'
-        document.getElementById('contenedor_mis_proyecto').style.display='block'
-        document.getElementById('contenedor_otros_proyecto').style.display='none'
-
-    }
-
-    function mostrar3(){
-        document.getElementById('contenedor_crear_proyecto').style.display='none'
-        document.getElementById('contenedor_mis_proyecto').style.display='none'
-        document.getElementById('contenedor_otros_proyecto').style.display='block'
-
-    }
-</script>
+<script src="Assets/js/usuario-proyecto.js"></script>
 <script src="Assets/js/menu.js"></script>
 
 </html>

@@ -27,24 +27,8 @@ class  Menu extends HTMLElement{
             <ul>
                 <li class="nav-menu--li"><a class="nav-menu--li-a" href="home.html">Home</a></li>
                 <li class="nav-menu--li"><a class="nav-menu--li-a" href="info.html">Info</a></li>
-                <li class="nav-menu--li"><a class="nav-menu--li-a"  href="contacto.html">Contacto</a></li>
-                <li class="nav-menu--li"><a class="nav-menu--li-a"  href="perfilUsuario.html"><i class="fa fa-user"></i></i></a></li>
-                <li class="nav-menu--li">
-                    <input type="checkbox" id="btn-modal">
-                    <label for="btn-modal" class="lbl-modal">unirme a proyecto</label>
-                    <!-- empieza modal -->
-                    <div class="modal">
-                        <div class="contenedor">
-                            <label for="btn-modal">X</label>
-                            <div class="container-login">
-                                <p class="p-login">Login</p>
-                                <input type="text" placeholder="Ingresa tu usuario" name="uname" required class="submit">
-                                <input type="password" placeholder="Ingresa tu contraseña" name="psw" required class="submit">                    <button type="submit" class="boton">Ingresar</button>
-                                <p class="p-regis">No sos miembro?,<a href="registro.html" id="a">Registate Aquí</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </li>
+                <li class="nav-menu--li"><a class="nav-menu--li-a" href="contacto.html">Contacto</a></li>
+                <li class="nav-menu--li"><a class="nav-menu--li-a" href="perfilUsuario.html"><i class="fa fa-user"></i></a></li>
             </ul>
         </div>
     </header>`

@@ -32,9 +32,6 @@ body{
     font-size: 2vh;
     font-weight:200;
 }
-.nav-menu a{
-    color: #fff;
-}
 
 .menu-icon img{
     width: 30px;
@@ -46,7 +43,13 @@ body{
 }
 .nav-menu--li-a{
     padding: 1rem;
-} 
+    color: #fff
+}
+
+i{
+    font-size: 2.5vh;
+}
+
 .nav-menu--li-a:hover{
     color: #a218d0;
     transition: 0s;
@@ -210,10 +213,9 @@ body{
     background-color: #5b5b5b;
     font-size: medium;
     font-weight: bold;
-    margin-right: 5%;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
 .caja-contenido{
@@ -225,4 +227,8 @@ body{
     font-size:larger;
     text-align: center;
     padding: 1vh;
+}
+
+.wea{
+    display: flex;
 }

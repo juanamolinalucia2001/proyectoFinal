@@ -91,12 +91,28 @@ figure:hover > button {
         width: 25%;
         height: 8vh;
     }
+    .body{
+        width: 100%;
+        height: auto;
+    }
+    .informacion{
+        width: 100%;
+        height: auto;
+    }
 }
 
 @media only screen and (min-width:120px) and (max-width:768px){
     .caja-menu-user{
         width: 33%;
         height: 8vh;
+    }
+    .body{
+        width: auto;
+        height: auto;
+    }
+    .informacion{
+        width: 100%;
+        height: auto;
     }
 }
 
@@ -131,9 +147,28 @@ i{
 
 /* crear proyecto */
 #contenedor_crear_proyecto{
-    display: flex;
+    padding: 4%;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
+    display: none;
+}
+
+#contenedor_mis_proyecto{
+    padding: 4%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    display: none;
+    width: auto;
+}
+
+#contenedor_otros_proyecto{
+    padding: 4%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    display: none;
 }
 
 .contenedor-registro{	
@@ -144,7 +179,6 @@ i{
 	box-shadow: 1px 7px 25px rgba(0,0,0,0.6);
 	border-radius: 2vh;
 	position:relative;
-	top: 5vh;
 }
 
 .container-registro{
@@ -172,6 +206,20 @@ i{
 #texto{
     display: block;
     font-size: large;
+    margin-bottom: 1vh;
+}
+
+#number{
+    width: 10%;
+    height: 10%;
+    font-size: large;
+}
+
+#checkbox1{
+    display: none;
+}
+#checkbox2{
+    display: none;
 }
 
 .boton-registro{
@@ -190,8 +238,116 @@ i{
 	background-color:rgb(0, 25, 186);
 }
 
+/* apartado mis proyectos*/
+.boton-eliminar{
+    width: 4vh;
+    height: 4vh;
+    border-radius: 1vh;
+    border: none;
+    color: #fff;
+    background-color: #e53f3f;
+    font-size: medium;
+    font-weight: bold;
+    top: 0;
+    margin-right: 2%;
+    display: block;
+    cursor: pointer;
+}
+.boton-eliminar:hover{
+	background-color:#982d2d;
+}
+.boton-modificar{
+    width: 4vh;
+    height: 4vh;
+    border-radius: 1vh;
+    border: none;
+    color: #fff;
+    background-color: #743fe5;
+    font-size: medium;
+    font-weight: bold;
+    top: 0;
+    margin-right: 2%;
+    display: block;
+    cursor: pointer;
+}
+.boton-modificar:hover{
+	background-color:#502c9f;
+}
+.boton-chat{
+    width: 4vh;
+    height: 4vh;
+    border-radius: 1vh;
+    border: none;
+    color: #fff;
+    background-color: #3fe550;
+    font-size: medium;
+    font-weight: bold;
+    top: 0;
+    margin-right: 2%;
+    display: block;
+    cursor: pointer;
+}
+.boton-chat:hover{
+	background-color:#2d9f38;
+}
+.boton-salir-proyecto{
+    width: 4vh;
+    height: 4vh;
+    border-radius: 1vh;
+    border: none;
+    color: #fff;
+    background-color: #e53f3f;
+    font-size: medium;
+    font-weight: bold;
+    top: 0;
+    margin-right: 2%;
+    display: block;
+    cursor: pointer;
+}
+.boton-salir-proyecto:hover{
+	background-color:#982d2d;
+}
+.boton-user-admin{
+    width: 4vh;
+    height: 4vh;
+    border-radius: 1vh;
+    border: none;
+    background-color: #3c58e8;
+    font-size: medium;
+    font-weight: bold;
+    color: #fff;
+    top: 0;
+    margin-right: 2%;
+    display: block;
+    cursor: pointer;
+}
+.boton-user-admin:hover{
+	background-color:#243485;
+}
+.a-user{
+    color: #fff;
+}
+
 @media only screen and (min-width:320px) and (max-width:768px){
 	.contenedor-registro{
-		width: 95%;
+		width: 100%;
 	}
+    .boton-eliminar{
+        width: 8vh;
+    }
+    .boton-modificar{
+        width: 8vh;
+    }
+    .boton-user-admin{
+        width: 8vh;
+    }
+    .boton-chat{
+        width: 8vh;
+    }
+    .boton-salir-proyecto{
+        width: 8vh;
+    }
+    #number{
+        width: 15%;
+    }
 }

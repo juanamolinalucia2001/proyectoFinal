@@ -24,8 +24,15 @@
                 <input type="email" placeholder="Ingresa tu correo" name="correo" required class="submit-registro" id="correo" onkeyup="validar()">
                 <span id="textoCorreo" class="texto"></span>
                 <input type="text" placeholder="Ingresa tu profesion" name="profesion" required class="submit-registro">
-                <p>Estudias? <input type="checkbox"></p>
-                <input type="text" placeholder="Contanos" name="estudia" required class="submit-registro">
+                <p id="texto">Estudias? <input onclick="checkbox()" type="checkbox"></p>
+                <div id="checkbox">
+                    <input type="text" placeholder="Contanos" name="estudia" required class="submit-registro">
+                </div>             
+                <script>
+                    function checkbox(){
+                        document.getElementById('checkbox').style.display='block'
+                    }
+                </script>   
                 <button type="submit" class="boton-registro">Ingresar</button>
             </form>
         </div>
