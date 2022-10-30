@@ -16,83 +16,26 @@
             <form id="form" action="#">
                 <input type="text" placeholder="Ingresa tu nombre completo" name="nombre" required class="submit-registro" id="nombre" onkeyup="validar()">
                 <span id="textoNombre" class="texto"></span>
-                <input type="date" placeholder="Ingresa tu fecha de nacimiento" name="nacimiento" required class="submit-registro" id="fecha" onkeyup="">
-                <input type="text" placeholder="Ingresa tu usuario" name="usuario" required class="submit-registro" id="usuario" onkeyup="validar()">
+                <p class="fecha">Ingresa tu fecha de nacimiento</p>
+                <input type="date" name="nacimiento" required class="submit-registro" id="fecha" onkeyup="">
+                <input type="text" placeholder="Ingresa tu nombre de usuario" name="usuario" required class="submit-registro" id="usuario" onkeyup="validar()">
                 <span id="textoUsu" class="texto"></span>
-                <input type="password" placeholder="Ingresa tu contraseñas" name="clave" required class="submit-registro" id="clave" onkeyup="validar()">
+                <input type="password" placeholder="Ingresa tu contraseña (2 MAY,3 letras y numeros)" name="clave" required class="submit-registro" id="clave" onkeyup="validar()">
                 <span id="textoClave" class="texto"></span>
                 <input type="email" placeholder="Ingresa tu correo" name="correo" required class="submit-registro" id="correo" onkeyup="validar()">
                 <span id="textoCorreo" class="texto"></span>
-                <input type="text" placeholder="Ingresa tu profesion" name="profesion" required class="submit-registro">
-                <p id="texto">Estudias? <input onclick="checkbox()" type="checkbox"></p>
-                <div id="checkbox">
-                    <input type="text" placeholder="Contanos" name="estudia" required class="submit-registro">
-                </div>             
-                <script>
-                    function checkbox(){
-                        document.getElementById('checkbox').style.display='block'
-                    }
-                </script>   
+                <p id="texto">¿Trabajas? <input onclick="checkbox1()" type="checkbox"></p>
+                <div id="checkbox1">
+                    <input type="text" placeholder="Ingresa tu profesion" name="profesion" class="submit-registro">
+                </div>
+                <p id="texto">¿Estudias? <input onclick="checkbox2()" type="checkbox"></p>
+                <div id="checkbox2">
+                    <input type="text" placeholder="Contanos" name="estudia" class="submit-registro">
+                </div>   
                 <button type="submit" class="boton-registro">Ingresar</button>
             </form>
         </div>
     </div>
 </body>
-<script>
-    function validar(){
-        let form = document.getElementById('form');
-        let email= document.getElementById('correo').value;
-        let textCorreo= document.getElementById('textoCorreo');
-        let nombre= document.getElementById('nombre').value;
-        let textNombre=document.getElementById('textoNombre')
-        let clave=document.getElementById('clave').value;
-        let textoClave=document.getElementById('textoClave')
-        let usuario=document.getElementById('usuario').value;
-        let textoUsu=document.getElementById('textoUsu')
-        let parttern= /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        let regex =/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])\w{8,}$/;
-        
-        if(email.match(parttern)){
-            form.classList.add('valid')
-            textCorreo.innerHTML="Tu mail es valido"
-            textCorreo.style.color="green"
-        }else{
-            form.classList.remove('valid')
-            textCorreo.innerHTML="Tu mail no es valido"
-            textCorreo.style.color="red"
-        }
-
-        if(nombre.length > 6){
-            form.classList.add('valid')
-            textNombre.innerHTML="Valido"
-            textNombre.style.color="green"
-        }else{
-            form.classList.remove('valid')
-            textNombre.innerHTML="No es valido"
-            textoNombre.style.color="red"
-        }
-
-        if(clave.match(regex) ){
-            form.classList.add('valid')
-            textoClave.innerHTML="Tu clave es valido"
-            textoClave.style.color="green"
-        }else{
-            form.classList.remove('valid')
-            textoClave.innerHTML="No es valido"
-            textClave.style.color="red"
-        }
-
-        if(usuario.length>8){
-            form.classList.add('valid')
-            textoUsu.innerHTML="Valido"
-            textoUsu.style.color="green"
-        }else{
-            form.classList.remove('valid')
-            textoUsu.innerHTML="No es valido"
-            textoUsu.style.color="red"
-        }
-
-
-    }
-</script>
+<script src="Assets/js/registro.js" ></script>
 </html>
