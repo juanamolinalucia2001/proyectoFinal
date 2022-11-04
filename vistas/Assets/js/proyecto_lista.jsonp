@@ -1,0 +1,38 @@
+listaProyectos([
+    {   "id": 1,
+        "nombre": "Proyecto 1 pagina de gatos",
+        "tematica":"Tecnologia",
+        "miembros": "1000",
+        "descripcion": "hola soy una descripcion ",
+        "metas":"hola soy una meta",
+        "conocimiento":"js/html/css",
+        "plazo":"17/08/2001"
+    },
+    {   "id": 2,
+        "nombre": "Proyecto 2 pagina de cv",
+        "tematica":"Tecnologia",
+        "miembros": "1000",
+        "descripcion": "hola soy una descripcion ",
+        "metas":"hola soy una meta",
+        "conocimiento":"js/html/css",
+        "plazo":"17/08/2001"
+    },
+    {   "id": 3,
+        "nombre": "Proyecto 3 pagina de gatos",
+        "tematica":"Tecnologia",
+        "miembros": "1000",
+        "descripcion": "hola soy una descripcion ",
+        "metas":"hola soy una meta",
+        "conocimiento":"js/html/css",
+        "plazo":"17/08/2001"
+    },
+    {   "id": 4,
+        "nombre": "Pro Plan",
+        "tematica":"Tecnologia",
+        "miembros": "1000",
+        "descripcion": "hola soy una descripcion ",
+        "metas":"hola soy una meta",
+        "conocimiento":"js/html/css",
+        "plazo":"17/08/2001"
+    }
+]);
