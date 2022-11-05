@@ -1,4 +1,4 @@
-listaProyectos([
+[
     {   "id": 1,
         "nombre": "Proyecto 1 pagina de gatos",
         "tematica":"Tecnologia",
@@ -34,5 +34,14 @@ listaProyectos([
         "metas":"hola soy una meta",
         "conocimiento":"js/html/css",
         "plazo":"17/08/2001"
-    }
-]);
+    },
+    {   "id": 5,
+    "nombre": "Pro Plan ahrre",
+    "tematica":"Tecnologia",
+    "miembros": "1000",
+    "descripcion": "hola soy una descripcion ",
+    "metas":"hola soy una meta",
+    "conocimiento":"js/html/css",
+    "plazo":"17/08/2001"
+}
+]
