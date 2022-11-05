@@ -50,6 +50,7 @@ function validar(){
         textoUsu.innerHTML="tu nombre de user no es valido"
         textoUsu.style.color="red"
     }
+
 }
 
 function checkbox1(){

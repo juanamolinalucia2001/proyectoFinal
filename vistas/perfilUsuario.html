@@ -64,8 +64,8 @@
                 </div>
             </div>
             <div id="contenedor_mis_proyecto">
-                <div class="contenedor-container" >
-                    <div class="contenido-proyecto">        
+                <div class="contenedor-container" id="con_contenedor_mis_proyecto">
+                 <!--    <div class="contenido-proyecto">        
                         <div class="header-proyecto">
                             <h1 class="h1-nombre">*nombre del proyecto*</h1>
                             <button class="boton-chat"><a class="a-user" href="chat.html"><i class="fa fa-comment-dots"></i></a></button>
@@ -101,88 +101,12 @@
                             <p>varius torquent dapibus interdum vestibulum ut lacus.</p>
                             <p>recursos/materiales/conocimientos</p>  
                             <p>objetivos/metas/plazos</p>
-                        </div>
-                    </div>
-                    <div class="contenido-proyecto">        
-                        <div class="header-proyecto">
-                            <h1 class="h1-nombre">*nombre del proyecto*</h1>
-                            <button class="boton-chat"><a class="a-user" href="chat.html"><i class="fa fa-comment-dots"></i></a></button>
-                            <button class="boton-modificar"><i class="fa fa-pen"></i></button>
-                            <button class="boton-eliminar"><i class="fa fa-trash"></i></button>
-                            <div class="contador">0/10</div>
-                        </div>
-                        <div class="caja-contenido">
-                            <p>nombre del creador: by gabo</p>  
-                            <p>informacion sobre lo que trata el proyecto:</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit iaculis ante</p>  
-                            <p>varius torquent dapibus interdum vestibulum ut lacus.</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit iaculis ante</p>  
-                            <p>varius torquent dapibus interdum vestibulum ut lacus.</p>
-                            <p>recursos/materiales/conocimientos</p>  
-                            <p>objetivos/metas/plazos</p>
-                        </div>
-                    </div>
+                        </div> -->
+                
                 </div>
             </div>
             <div id="contenedor_otros_proyecto">
-                <div class="contenedor-container" >
-                    <div class="contenido-proyecto">        
-                        <div class="header-proyecto">
-                            <h1 class="h1-nombre">*nombre del proyecto*</h1>
-                            <button class="boton-chat"><a class="a-user" href="chat.html"><i class="fa fa-comment-dots"></i></a></button>
-                            <button class="boton-user-admin"><i class="fa fa-user-tie"></i></i></button>
-                            <button class="boton-salir-proyecto"><i class="fa fa-user-slash"></i></button>
-                            <div class="contador">0/10</div>
-                        </div>
-                        <div class="caja-contenido">
-                            <p>nombre del creador: by gabo</p>  
-                            <p>informacion sobre lo que trata el proyecto:</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit iaculis ante</p>  
-                            <p>varius torquent dapibus interdum vestibulum ut lacus.</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit iaculis ante</p>  
-                            <p>varius torquent dapibus interdum vestibulum ut lacus.</p>
-                            <p>recursos/materiales/conocimientos</p>  
-                            <p>objetivos/metas/plazos</p>
-                        </div>
-                    </div>
-                    <div class="contenido-proyecto">        
-                        <div class="header-proyecto">
-                            <h1 class="h1-nombre">*nombre del proyecto*</h1>
-                            <button class="boton-chat"><a class="a-user" href="chat.html"><i class="fa fa-comment-dots"></i></a></button>
-                            <button class="boton-user-admin"><i class="fa fa-user-tie"></i></i></button>
-                            <button class="boton-salir-proyecto"><i class="fa fa-user-slash"></i></button>
-                            <div class="contador">0/10</div>
-                        </div>
-                        <div class="caja-contenido">
-                            <p>nombre del creador: by gabo</p>  
-                            <p>informacion sobre lo que trata el proyecto:</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit iaculis ante</p>  
-                            <p>varius torquent dapibus interdum vestibulum ut lacus.</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit iaculis ante</p>  
-                            <p>varius torquent dapibus interdum vestibulum ut lacus.</p>
-                            <p>recursos/materiales/conocimientos</p>  
-                            <p>objetivos/metas/plazos</p>
-                        </div>
-                    </div>
-                    <div class="contenido-proyecto">        
-                        <div class="header-proyecto">
-                            <h1 class="h1-nombre">*nombre del proyecto*</h1>
-                            <button class="boton-chat"><a class="a-user" href="chat.html"><i class="fa fa-comment-dots"></i></a></button>
-                            <button class="boton-user-admin"><i class="fa fa-user-tie"></i></i></button>
-                            <button class="boton-salir-proyecto"><i class="fa fa-user-slash"></i></button>
-                            <div class="contador">0/10</div>
-                        </div>
-                        <div class="caja-contenido">
-                            <p>nombre del creador: by gabo</p>  
-                            <p>informacion sobre lo que trata el proyecto:</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit iaculis ante</p>  
-                            <p>varius torquent dapibus interdum vestibulum ut lacus.</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit iaculis ante</p>  
-                            <p>varius torquent dapibus interdum vestibulum ut lacus.</p>
-                            <p>recursos/materiales/conocimientos</p>  
-                            <p>objetivos/metas/plazos</p>
-                        </div>
-                    </div>
+                <div class="contenedor-container" id="contenedor_proyecto_unido" >
                 </div>
             </div>
         </div>
@@ -192,5 +116,9 @@
 
 <script src="Assets/js/usuario-proyecto.js"></script>
 <script src="Assets/js/menu.js"></script>
-
+<script src="Assets/js/proyecto_lista.json"></script>
+<script src="Assets/js/proyecto.js"></script>
+<script>misProyectos();
+        miembroDeProyectos();
+</script>
 </html>

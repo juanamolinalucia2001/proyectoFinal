@@ -1,0 +1,19 @@
+[
+    {   "id": 1,
+        "id_miembro": "id:1 Juan",
+        "chat":"Hola soy Juan mucho Gusto"   
+    },
+    {   "id": 3,
+    "id_miembro": "id:2 Gabriel",
+    "chat":"Hola soy Gabo mucho Gusto"   
+    },
+    {   "id": 4,
+    "id_miembro": "2",
+    "chat":"Me Gusta el anime"   
+    },
+    {   "id": 2,
+    "id_miembro": "1",
+    "chat":"Woow ami tambien"   
+    }
+
+]
