@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil usuario</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/estilo-Perfil-Usuario.css')}}">
+
+    <script src="https://kit.fontawesome.com/eb1dfef847.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <menu-component></menu-component>
+    <div class="body">
+        <div class="informacion">
+            <figure>
+                <img src="/static/img/img1.jpg" alt="imagen-usuario">
+                <button><a class="a-user" href="informacion-user.html"><p class="p-menu-user">Mi perfil <i class="fa fa-pen"></i></p></a></button>
+            </figure>
+            <h1 id="titulo">Bienvenido Usuario</h1>
+            <div class="menu-user">
+                <button class="caja-menu-user" onclick="mostrar1()">
+                    <a class="a-user" href="#CrearProyectos"><p class="p-menu-user">Crear Proyecto <i class="fa fa-plus"></i></p></a>
+                </button>
+                <button class="caja-menu-user" onclick="mostrar2()">
+                    <a class="a-user" href="#MisProyectos"><p class="p-menu-user">Mis Proyectos <i class="fa fa-lightbulb"></i></p></a>
+                </button>
+                <button class="caja-menu-user" onclick="mostrar3()" >
+                    <a class="a-user" href="#ProyectosUnidos"><p class="p-menu-user">Proyectos Unidos <i class="fa fa-users"></i></p></a>
+                </button>
+            </div>
+
+            <div id="contenedor_crear_proyecto">
+                <div class="contenedor-registro">
+                    <div class="container-registro">
+                        <form id="form" action="#">
+                            <input type="text" placeholder="Ingrese el nombre del Proyecto" name="nombre" required class="submit-registro">
+                            <label  id="texto">Selecione una tematica</label>
+                            <input type="text" placeholder="Puede elegir una de las tematicas por defecto" multiple name="tematica" list="drawfemails" class="submit-registro"/>
+                            <datalist id="drawfemails">
+                                <option>Tecnologia</option>
+                                <option>Industrial</option>
+                                <option>Domestico</option>
+                                <option>Textil</option>
+                                <option>Diseño</option>
+                                <option>Arte</option>
+                            </datalist>
+                            <label  id="texto">Selecione una cantidad maxima de Usuarios</label><br>
+                            <input type="number" id="number" name="number" min="2" max="10">
+                            <input type="text" placeholder="Ingresa una breve descripcion del Proyecto" name="descripcion" required class="submit-registro">
+                            <input type="text" placeholder="metas a lograr u objetivos" name="metas" required class="submit-registro">
+                            
+                            <label id="texto">Conocimientos/Requisitos de participantes <input onclick="checkbox1()" type="checkbox"></label>
+                            <div id="checkbox1">
+                                <input type="text" placeholder="Especifique" name="conocimientos" required class="submit-registro">
+                            </div>
+                            <label  id="texto">Requiere algun plazo? <input onclick="checkbox2()" type="checkbox"></label>
+                            <div id="checkbox2">
+                                <input type="date" placeholder="Ingresa el plazo de finalizacion" name="plazo" required class="submit-registro">
+                            </div>
+
+                            <button type="submit" class="boton-registro">Crear Proyecto</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div id="contenedor_mis_proyecto">
+                <div class="contenedor-container" id="con_contenedor_mis_proyecto">
+                 <!--    <div class="contenido-proyecto">        
+                        <div class="header-proyecto">
+                            <h1 class="h1-nombre">*nombre del proyecto*</h1>
+                            <button class="boton-chat"><a class="a-user" href="chat.html"><i class="fa fa-comment-dots"></i></a></button>
+                            <button class="boton-modificar"><i class="fa fa-pen"></i></button>
+                            <button class="boton-eliminar"><i class="fa fa-trash"></i></button>
+                            <div class="contador">0/10</div>
+                        </div>
+                        <div class="caja-contenido">
+                            <p>nombre del creador: by gabo</p>  
+                            <p>informacion sobre lo que trata el proyecto:</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit iaculis ante</p>  
+                            <p>varius torquent dapibus interdum vestibulum ut lacus.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit iaculis ante</p>  
+                            <p>varius torquent dapibus interdum vestibulum ut lacus.</p>
+                            <p>recursos/materiales/conocimientos</p>  
+                            <p>objetivos/metas/plazos</p>
+                        </div>
+                    </div>
+                    <div class="contenido-proyecto">        
+                        <div class="header-proyecto">
+                            <h1 class="h1-nombre">*nombre del proyecto*</h1>
+                            <button class="boton-chat"><a class="a-user" href="chat.html"><i class="fa fa-comment-dots"></i></a></button>
+                            <button class="boton-modificar"><i class="fa fa-pen"></i></button>
+                            <button class="boton-eliminar"><i class="fa fa-trash"></i></button>
+                            <div class="contador">0/10</div>
+                        </div>
+                        <div class="caja-contenido">
+                            <p>nombre del creador: by gabo</p>  
+                            <p>informacion sobre lo que trata el proyecto:</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit iaculis ante</p>  
+                            <p>varius torquent dapibus interdum vestibulum ut lacus.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit iaculis ante</p>  
+                            <p>varius torquent dapibus interdum vestibulum ut lacus.</p>
+                            <p>recursos/materiales/conocimientos</p>  
+                            <p>objetivos/metas/plazos</p>
+                        </div> -->
+                
+                </div>
+            </div>
+            <div id="contenedor_otros_proyecto">
+                <div class="contenedor-container" id="contenedor_proyecto_unido" >
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script src="/static/js/usuario-proyecto.js"></script>
+<script src="/static/js/menu.js"></script>
+<script src="/static/js/proyecto_lista.json"></script>
+<script src="/static/js/proyecto.js"></script>
+<script>misProyectos();
+        miembroDeProyectos();
+</script>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/estilo-info.css')}}">
+</head>
+<body>
+    <menu-component></menu-component>
+    <h4 class="menu-h4">Link Group</h4>
+    <div class="content-principal">
+        <div class="contenido">
+            <img class="img-menu" src="/static/img/Personas.png" alt="">
+        </div>
+        <div class="contenido">
+            <div class="contenido-text">
+                <h2>¿Que es?</h2>
+                <p>Es una pagina web en la que encontraras personas con  las que desarollaras tu proyecto</p>
+                <h2>¿Como funciona?</h2>
+                <p>En la pantalla "home" podras buscar y crear proyectos a partir de categorías definidas</p>
+                <h2>¿A quienes esta dirigido?</h2>
+                <p>A personas que tengan el interes de sumar, compartir, enseñar y aprender conocimiento</p>
+                <img src="/static/img/Personas-menu.png" alt="" id="img_contenido-text">
+            </div>
+        </div>
+        <div class="contenido">
+            <img class="img-menu" src="/static/img/Proyectos.png" alt="">
+        </div>
+    </div> 
+</body>
+<script src="/static/js/menu.js"></script>
+</html>

@@ -1,0 +1,38 @@
+class  Menu extends HTMLElement{
+    constructor(){
+        super();
+      
+    }
+    connectedCallback(){
+        this.innerHTML=`
+        <!DOCTYPE html>
+        <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/static/css/estilo-home.css">
+        <link rel="stylesheet" href="/static/css/estilo-modal.css">
+        <script src="https://kit.fontawesome.com/eb1dfef847.js" crossorigin="anonymous"></script>
+    </head>
+    <header class="header">
+        <div class="logo-header">
+            <a href="../"><img src="/static/img/logo1.png" alt=""></a>
+        </div>
+        <div class="nav-menu">
+            <input type="checkbox" id="check">    
+            <label for="check" class="checkbtn">
+                <i class="menu-icon"><img src="/static/img/menú-30.svg" alt=""></i>
+            </label>
+            <ul>
+                <li class="nav-menu--li"><a class="nav-menu--li-a" href="../">Home</a></li>
+                <li class="nav-menu--li"><a class="nav-menu--li-a" href="./info">Info</a></li>
+                <li class="nav-menu--li"><a class="nav-menu--li-a" href="./contacto">Contacto</a></li>
+                <li class="nav-menu--li"><a class="nav-menu--li-a" href="./perfil"><i class="fa fa-user"></i></a></li>
+            </ul>
+        </div>
+    </header>`
+    }
+   
+}
+window.customElements.define('menu-component',Menu)

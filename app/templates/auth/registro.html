@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registro</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/estilo-registro.css')}}">
+</head>
+<script src="static/js/menu.js"></script>
+<body>
+    <menu-component></menu-component>
+    <div class="contenedor-registro">
+        <div class="container-registro">
+            <p class="p-registro">Registro</p>
+            <form id="form" action="#">
+                <input type="text" placeholder="Ingresa tu nombre completo" name="nombre" required class="submit-registro" id="nombre" onkeyup="validar()">
+                <span id="textoNombre" class="texto"></span>
+                <p class="fecha">Ingresa tu fecha de nacimiento</p>
+                <input type="date" name="nacimiento" required class="submit-registro" id="fecha" onkeyup="">
+                <input type="text" placeholder="Ingresa tu nombre de usuario" name="usuario" required class="submit-registro" id="usuario" onkeyup="validar()">
+                <span id="textoUsu" class="texto"></span>
+                <input type="password" placeholder="Ingresa tu contraseña (2 MAY,3 letras y numeros)" name="clave" required class="submit-registro" id="clave" onkeyup="validar()">
+                <span id="textoClave" class="texto"></span>
+                <input type="email" placeholder="Ingresa tu correo" name="correo" required class="submit-registro" id="correo" onkeyup="validar()">
+                <span id="textoCorreo" class="texto"></span>
+                <p id="texto">¿Trabajas? <input onclick="checkbox1()" type="checkbox"></p>
+                <div id="checkbox1">
+                    <input type="text" placeholder="Ingresa tu profesion" name="profesion" class="submit-registro">
+                </div>
+                <p id="texto">¿Estudias? <input onclick="checkbox2()" type="checkbox"></p>
+                <div id="checkbox2">
+                    <input type="text" placeholder="Contanos" name="estudia" class="submit-registro">
+                </div>   
+                <button type="submit" class="boton-registro" onsubmit="return validar()">Ingresar</button>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="static/js/registro.js" ></script>
+</html>
