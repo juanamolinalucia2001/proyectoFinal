@@ -4,20 +4,19 @@ from flask import render_template
 from flask import g, flash
 from flask import abort, request, redirect, url_for
 from flask_nav import Nav
-from flask_nav.elements import  Navbar,Subgroup,View
+from flask_nav.elements import *
 
 
+app = Flask(__name__)
 
-
-app=Flask(__name__)
-
-nav=Nav(app)
+nav = Nav(app)
 @nav.navigation('menu')
 def create_navbar():
-    home_view=View('home','homepage')
-    info_view=View('info','info')
-    contacto_view=View('contacto','contacto')
-    perfil_view=View('perfil','perfilUsuario')
+    home_view=View('Home','homepage')
+    info_view=View('Info','info')
+    contacto_view=View('Contacto','contacto')
+    perfil_view=View('Perfil','perfilUsuario')
+    return Navbar('mysitio',home_view,info_view,contacto_view,perfil_view)
 
 
 
@@ -42,11 +41,5 @@ def contacto():
 def perfil():
     return render_template('perfilUsuario.html')
 
-# @app.route('/contacto/')
-# def contacto():
-#     return render_template('contacto.html')
-
-
-if __name__=="__main__":
+if __name__ == '__main__':
     app.run()
-    
